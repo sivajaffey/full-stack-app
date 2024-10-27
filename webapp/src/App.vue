@@ -1,15 +1,22 @@
 <template>
-  <img alt="Vue logo" src="./assets/logo.png">
-  <HelloWorld msg="Welcome to Your Vue.js App"/>
+  <!-- {{ this.$router.currentRoute.value.path }} -->
+ <router-view />
 </template>
 
-<script>
-import HelloWorld from './components/HelloWorld.vue'
 
+<script>
 export default {
   name: 'App',
-  components: {
-    HelloWorld
+  components: { },
+  data(){
+    return {
+        header: "Welcome"
+    }
+  },
+  methods:{
+    // viewListPage() {console.log('test',this.$router.currentRoute)
+    //   this.$router.push({name:'MyCrudComponent'});
+    // }
   }
 }
 </script>
